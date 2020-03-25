@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>js考核</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="content">
+			<!--头部-->
+			<div class="nav">
+				js考核
+			</div>
+			<!--内容-->
+			<div class="products">
+				<!--内容左-->
+				<div class="products_left">
+					<div class="products_left_content_one" id="menu">
+						菜单一
+					</div>
+					<div class="select" id="select">
+							<div class="">
+							购物商城
+							</div>
+							<div class="">
+							三级联动
+							</div>
+					</div>
+					<div class="products_left_content_one">
+						菜单二
+					</div>
+					<div class="products_left_content_one">
+						菜单三
+					</div>
+				</div>
+				<!--内容右-->
+				<div class="products_right">
+					<div class="shopping">
+						<div class="shopping_title">
+							xx商城
+						</div>
+						<div class="shopping_commodity">
+							<div class="shopping_commodity_current">
+								当前位置->我的购物车
+							</div>
+							<div class="shopping_commodity_content">
+							<div class="shopping_commodity_content_title">
+									<input type="checkbox" name="" id="election" value="" onclick="giao()" />全选
+									<span class="shopping_commodity_content_span">商品</span>
+									<span class="shopping_commodity_content_span_two">单价</span>
+									<span class="shopping_commodity_content_span_two">数量</span>
+									<span class="shopping_commodity_content_span_two">小计</span>
+									<span class="shopping_commodity_content_span_two">操作</span>
+							</div>
+							<ul>
+								<li>
+									<input type="checkbox" name="lo" id="nem1" value="" class="hallow" />
+									<img src="img/1.jpg"/>
+									鬼
+									<em>100</em>
+									<input type="button" name="" id="" value="-" />
+										<strong>0</strong>
+									<input type="button" name="" id="" value="+" />
+									<span id="" class="max">
+										0
+									</span>
+									<a href="#">删除</a>
+								</li>
+								<li>
+									<input type="checkbox" name="lo" id="nem2" value="" class="hallow" />
+									<img src="img/1.jpg"/>
+									鬼
+									<em>200</em>
+									<input type="button" name="" id="" value="-" />
+										<strong>0</strong>
+									<input type="button" name="" id="" value="+" />
+									<span id="" class="max">
+										0
+									</span>
+									<a href="#">删除</a>
+								</li>
+								<li>
+									<input type="checkbox" name="lo" id="nem3" value="" class="hallow" />
+									<img src="img/1.jpg"/>
+									鬼
+									<em>300</em>
+									<input type="button" name="" id="" value="-" />
+									<strong>0</strong>
+									<input type="button" name="" id="" value="+" />
+									<span id="" class="max">
+										0
+									</span>
+									<a href="#" id="a">删除</a>
+								</li>
+								
+							</ul>
+							<p>
+								<a onclick="delet()">删除选中商品</a>
+								总共选了<span>0</span>件商品 
+								总计<span>0</span>元
+								<span id="suan">
+									去结算
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/test.js" type="text/javascript" charset="utf-8"></script>
+</html>

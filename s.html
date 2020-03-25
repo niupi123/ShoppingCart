@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		#jine,
+		#riqi {
+			width: 20%;
+			display: inline-block;
+		}
+		
+		#xjin,
+		#xri {
+			display: none;
+		}
+	</style>
+
+	<body>
+		<div id="">
+			<i>金额：</i>
+			<span id="jine">
+			666.00
+		</span>
+			<button id="xiu">
+		修改	
+		</button>
+			<input type="text" name="" id="xjin" value="" />
+		</div>
+
+		<div id="">
+			日期：
+			<span id="riqi">
+			2019-9-16
+		</span>
+			<button id="gai">
+		修改			
+		</button>
+			<input type="text" id="xri" value="" />
+		</div>
+	</body>
+	<script type="text/javascript">
+		var mydiv = document.getElementsByTagName("div");
+		for(var i = 0; i < mydiv.length; i++) {
+			xiugai(mydiv[i]);
+		}
+
+		function xiugai(nem) {
+			var mybutton = nem.getElementsByTagName("button")[0];
+			var myinput = nem.getElementsByTagName("input")[0];
+			var myspan = nem.getElementsByTagName("span")[0];
+			var myi = nem.getElementsByTagName("i")[0];
+			var index = 0;
+			mybutton.onclick = function() {
+				if(index == 1) {
+					myinput.style.display = "none";
+					myspan.innerText = myinput.value;
+					mybutton.style.display= "none";
+				} else {
+					myinput.style.display = "inline-block";
+					mybutton.innerText = "确认";
+					myinput.focus();
+					//				myinput.onmouseout=function(){
+					//				var p=	myinput.focus()? false : true;
+					//				if(p == true){
+					//					myinput.style.display="none";
+					//				}
+					//			}
+					index = 1;
+				}
+			}
+		}
+	</script>
+
+</html>
